@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+ 
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    position: fixed;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navlist li {
+    list-style: none;
+
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+
+.left-container,
+.right-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.left-container {
+    background: #262626;
+    width: 70%;
+    padding-left: 3rem;
+
+}
+
+.right-container {
+    background: #4f7698;
+    width: 30%;
+}
+
+.icons .fa-brands {
+    color: #bbb;
+    font-size: 1.7rem;
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 4rem;
+
+}
+
+.Intro {
+    font-size: 1.5rem;
+    color: #8a8a8e;
+}
+
+.Intro2 {
+    font-size: 3.8rem;
+    color: #d55676;
+}
+
+.detail {
+    font-size: 1rem;
+    color: #fff;
+    max-width: 35rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn-container button {
+    border-color: #5db9ee;
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+    border-radius: .6rem;
+    cursor: pointer;
+
+
+}
+
+button:nth-child(1) {
+    background-color: #5db9ee;
+}
+
+button:nth-child(2) {
+    background: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+}
+
+button:nth-child(1):hover {
+    background: transparent;
+    color: #5db9ee;
+}
+
+button:nth-child(2):hover {
+    background: #5db9ee;
+    color: #252525;
+}
+
+.icons .fa-brands {
+    cursor: pointer;
+    background: linear-gradient(#fff #3877ff);
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+}
+.circle:nth-child(2){
+   background-image: url(TT.jpg);
+   background-size: 100%;
+   background-repeat: no-repeat;
+    width: 30rem;
+}
+.navlist li a::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5%;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+.navlist li a:hover::after{
+    transform: scaleX(1);
+}
